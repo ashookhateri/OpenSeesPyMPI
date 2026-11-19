@@ -1,0 +1,3 @@
+9654af312ae862bca0e8085db4262e22ee5320b38975b6f324a2424fd9028c99  patches/openseespy-mpi.patch
+# zip hash is printed by the build log and quoted in the delivery message;
+# it cannot be stored inside the archive it describes.

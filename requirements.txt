@@ -1,0 +1,18 @@
+# Runtime requirements for the OpenSeesPyMPI test suite.
+#
+# The modules under test are *built from source* (see build.ps1 / build.sh);
+# OpenSeesPy is deliberately NOT listed here so that a pip-installed wheel can
+# never be mistaken for the locally built module.
+#
+# Everything below is only needed to run the validation scripts.
+
+# Arrays/statistics for the comparison report (optional: compare_results.py
+# falls back to pure Python if numpy is absent).
+numpy>=1.24
+
+# Optional, only if you want an independent MPI implementation to cross-check
+# the extension's rank/communication helpers:
+# mpi4py>=3.1
+
+# Optional, for reading recorder output into pandas:
+# pandas>=2.0
